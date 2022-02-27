@@ -359,6 +359,7 @@ form{
         right: -100%;
         text-align: start;
         transition: all 0.5s;
+        z-index: 100;
     }
     .menu li{
         display:block;
