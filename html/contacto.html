@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="icon" href="../imagenes/logo2.png" />
+    <title>BodyBest</title>
+</head>
+<body>
+    <header class="header">
+        <a href="../index.html">
+        <img src="../imagenes/bodybestlogo2-modified.png" class="headerLogo">
+        </a>
+        <nav>
+            <div class="headerNav">
+                <input type="checkbox" id="check">
+                <label for="check" class="bar_button">
+                <i class="fa-solid fa-bars"></i>
+                </label>
+                <ul class="menu">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="productos.html">Productos ⬇</a>
+                        <ul class="subMenu">
+                            <li><a href="html/productos/proteinas.html">Proteinas</a></li>
+                            <li><a href="html/productos/creatinas.html">Creatinas</a></li>
+                            <li><a href="html/productos/vitaminas.html">Vitaminas</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="faqs.html">FAQs</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <h1>CONTACTO</h1>
+    <section class="formSection">
+        <h2 class="textConsulta">Dejanos tu consulta</h2>
+        <div class="contenedor">
+            <form action>
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" placeholder="Ingresa tu nombre" class="text" required/>  
+                <label for="apellido">Apellido</label>
+                <input type="text" name="apellido" placeholder="Ingresa tu apellido" class="text" required/>
+                <label for="email">Correo</label>
+                <input type="email" name="email" placeholder="Ingresa tu email" class="text" required/>
+                <label for ="consulta">Tu consulta</label>
+                <textarea name="consulta"  placeholder="Ingresa tu consulta" class="textArea" required></textarea>
+                <input type="submit" class="botonEnviar">
+            </form>
+        </div>
+    </section>
+    <section class="sectContactos">
+        <div class="direccion">
+            <i class="fa-solid fa-map-location-dot" class="iconContacto"></i>
+            <h3>Direccion</h3>
+            <p>9 de Julio 258, Galería Planeta</p>
+        </div>
+        <div class="numCelular">
+            <i class="fa-solid fa-mobile-screen-button" class="iconContacto"></i>
+            <h3>Telefono</h3>
+            <p>xxxxxxxxx</p>
+        </div>
+        <div class="horarios">
+            <i class="fa-solid fa-calendar-days" class="iconContacto"></i>
+            <h3>Horarios</h3>
+            <p>L M M J V 10:00 a 18:00hs</p>
+            <p>Sabados 10:00 a 14:00hs</p>
+        </div>
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d851.2516334828947!2d-64.18761526269763!3d-31.41394606020776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a36949aa747d%3A0x26b3bf1790ee6f91!2sBody%20Best%20nutrition%20%26%20fitness!5e0!3m2!1ses!2sar!4v1643394876276!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
+    <footer class="footerClass">
+        <div class="divFooter">
+            <p>© 2022 BodyBest. Todos los derechos reservados.</p>
+        </div>
+        <div class="telefonoFooter">
+            <p>Telefono: xxxxxxxx</p>
+            <p>9 de Julio 258, Galería Planeta</p>
+        </div>
+        <div class="instagramFooter">
+            <a href="https://www.instagram.com/bodybest.ar/">
+                <i class="fa-brands fa-instagram" id="iconIg"></i>
+                <h4>Seguinos en instagram</h4> 
+            </a>
+        </div>
+        <div class="horariosFooter">
+            <p>Horarios</p>
+            <p>Lunes a viernes 10:00 a 18:00hs</p>
+            <p>Sabados 10:00 a 14:00hs</p>
+        </div>
+    </footer>
+</body>
+</html>

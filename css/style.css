@@ -1,0 +1,538 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body {
+    background-color: rgb(255, 251, 251);
+    padding-left: 50px;
+    padding-right: 50px;
+    font-family: 'Roboto', sans-serif;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    align-items: center;
+}
+h1{
+    background-color: red;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+
+.headerNav li{
+    list-style-type: none;
+    font-size: 1.5rem;
+    text-transform: uppercase ;
+}
+
+.menu {
+    display:inline-block;
+    list-style-type:none;
+
+}
+.menu > li {
+    position:relative;
+    display:inline-block;
+}
+.menu li a:hover{
+    color:rgb(202, 29, 81);
+    transition: all .3s;
+}
+
+.menu > li >a{
+    display: block;
+    color:black;
+    text-decoration: none;
+    padding: 1rem;
+}
+/* Aqui hice lo del submenu desplegable, se que no quedo lo mas lindo pero me fui guiando del pdf y de un video ya lo voy a ir mejorando */
+.subMenu{
+    position: absolute;
+    list-style-type: none;
+    background: black;
+    width: 100%;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1.5s;
+    text-align: center;
+}
+
+.submenu li {
+    display:block;
+}
+.subMenu li a {
+    display:block;
+    color:#fff;
+    text-decoration: none; 
+    padding: 0.5rem 1.2rem;
+}
+.menu li:hover .subMenu{
+    display:block;
+    visibility: visible;
+    opacity: 1;
+}
+a{
+    text-decoration: none;
+    color: rgb(23, 23, 23);
+}
+
+#check{
+    display:none;
+}
+
+.bar_button{
+    font-size: 2rem;
+    cursor: pointer;
+    display:none;
+}
+
+.sectionMain{
+    display:grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 350px 1fr;
+    grid-template-areas: "banner banner"
+                         "promo  destacado";
+    text-align: center;
+    padding: 1rem;
+}
+
+.imgCarrousel{
+    grid-area: banner;
+}
+.imgCarrousel img{
+    width: 100%;
+}
+
+.imgDestacado{
+    grid-area:destacado;
+    width: 100%;
+}
+.imgDestacado img:hover{
+    transform: scale(1.2, 1.2);
+    transition: all .5s;
+}
+.imgPromo{
+    grid-area:promo;
+    width: 100%;
+}
+.imgPromo img:hover{
+    transform: scale(1.2, 1.2);
+    transition: all .5s;
+}
+
+footer {
+    border-top: solid 2px;
+}
+
+.footerClass{
+    display:grid;
+    width: 100%;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-areas: "copy telefono ig horarios";
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+}
+#iconIg{
+    font-size: 1.5rem;
+}
+#iconIg:hover{
+    color: red;
+}
+
+/*-------------------------CONTACTO--------------------------------------*/
+h2{
+    text-align: center;
+    padding: 2rem;
+}
+
+
+.textConsulta{
+    margin-bottom: 0;
+    font-size: 2rem;
+}
+label{
+    font-size: 1.2rem;
+}
+
+.formSection{
+    max-width: 114rem;
+    margin: auto;
+}
+
+form{
+    max-width: 80rem;
+    margin: auto;
+    padding: 1rem;
+}
+
+.text{
+    width: 100%;
+    text-align: left;
+    font-size: 1rem;
+    font-weight: 200;
+    text-decoration: none;
+    text-transform: none;
+    line-height: 1.5;
+    margin: 1rem 0;
+    padding: 1rem;
+    border: 0.1rem solid;
+    border-radius: 1rem;
+}
+
+.textArea{
+    display:flex;
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    text-align: left;
+    font-size: 1rem;
+    font-weight: 200;
+    text-decoration: none;
+    text-transform: none;
+    line-height: 1.5;
+    margin: 1rem 0;
+    padding: 1rem;
+    border: 0.1rem solid;
+    border-radius: 1rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.botonEnviar {
+    width: 100%;
+    height: 10%;
+    background-color: #31384A;
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 200;
+    text-decoration: none;
+    text-transform: none;
+    line-height: 1.5;
+    margin: 1.5rem 0 3rem 0;
+    padding: 1rem;
+    border: 0.1rem solid;
+    border-radius: 1rem;
+}
+
+.botonEnviar:hover{
+    cursor: pointer;
+}
+
+.sectContactos {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 150px;
+    grid-template-areas: "ubicacion telefono horariosContacto"
+                         "map map map";
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.horarios{
+    grid-area:horariosContacto;
+}
+.direccion{
+    grid-area:ubicacion;
+}
+.numCelular{
+    grid-area:telefono;
+}
+.map{
+    grid-area:map;
+    display:flex;
+    justify-content: center;
+    padding:4rem;
+}
+
+/*---------------------------PRODUCTOS-----------------------------*/
+.sectionProductos{
+    display:grid;
+    grid-template-columns: 20% 40% 40%;
+    grid-template-areas: "titulo titulo titulo"
+                         "barra prod1 prod2"
+                         "barra prod3 prod4";
+    grid-template-rows: 65px 1fr 1fr;
+    row-gap: 2rem;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+.tituloProteinas{
+    grid-area:titulo;
+}
+.menuProductos{
+    grid-area:barra;
+    list-style-type: none;
+    font-size: 1.5rem;
+    text-align: start;
+    padding-left:1rem;
+    border:solid rgba(0, 0, 0, 0.5);
+}
+.menuProductos li a:hover{
+    color:rgb(202, 29, 81);
+}
+.divProductos{
+    grid-area:prod1;
+}
+.divProductos2{
+    grid-area:prod2;
+}
+.divProductos3{
+    grid-area:prod3;
+}
+.divProductos4{
+    grid-area:prod4;
+}
+/*---------------NOSOTROS-------------------*/
+.nosotros{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 65px 1fr 150px;
+    grid-template-areas: "tituloN tituloN"
+                         "nosotros1 nosotros2"
+                         "tarjetas tarjetas";
+    text-align: center;
+    row-gap: 1.5rem;
+}
+.tituloNosotros{
+    grid-area:tituloN;
+}
+.divNosotros{
+    grid-area:nosotros1;
+}
+.divNosotros2{
+    grid-area:nosotros2;
+}
+.divNosotros3{
+    grid-area:tarjetas;
+}
+.divNosotros3 i{
+    font-size: 2rem;
+    padding-left: 1.5rem;
+}
+/*----------------------------FAQS-------------------------*/
+.faqsSection{
+    display:grid;
+    grid-template-columns: 65%;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+                         "pregunta1"
+                         "pregunta2"
+                         "pregunta3";
+    text-align: center;
+    row-gap: 2rem;
+    padding-bottom:2rem;
+    justify-content: center;
+}
+
+.faqsPregunta{
+    grid-area:pregunta1;
+}
+.faqsPregunta2{
+    grid-area:pregunta2;
+}
+.faqsPregunta3{
+    grid-area:pregunta3;
+}
+
+@media only screen and (max-width: 600px){
+    body{
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .bar_button{
+        display:block;
+        padding-left: 2rem;
+    }
+
+    .menu{
+        position:fixed;
+        width: 100%;
+        height: 100%;
+        background-color: #7787a7;
+        top:220px;
+        right: -100%;
+        text-align: start;
+        transition: all 0.5s;
+    }
+    .menu li{
+        display:block;
+    }
+    .menu li:hover .subMenu{
+        position: relative;
+        display:block;
+        visibility: visible;
+        opacity: 1;
+    }
+    #check:checked ~ .menu{
+        right: 0;
+    }
+
+    .sectionMain{
+        display:grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 100px 1fr 1fr;
+        grid-template-areas: "banner"
+                             "promo" 
+                             "destacado";
+        align-items: center;
+        text-align: center;
+    }
+    
+    .imgCarrousel{
+        grid-area: banner;
+        width: 100%;
+    }
+    
+    .imgDestacado{
+        grid-area:destacado;
+    }
+    .imgDestacado img{
+        width: 100%;
+    }
+
+    .imgPromo{
+        grid-area:promo;
+    }
+
+    .imgPromo img{
+        width: 100%;
+    }
+
+    .footerClass{
+        display:grid;
+        width: 100%;
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas: "copy"
+                             "telefono"
+                             "ig" 
+                             "horarios";
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .divFooter{
+        grid-area:copy;
+        text-align: center;
+    }
+    .telefonoFooter{
+        grid-area:telefono;
+        text-align: center;
+    }
+    .instagramFooter{
+        grid-area: ig;
+        text-align: center;
+    }
+    .imgInstagram{
+        width: 20%;
+    }
+    
+    .horariosFooter{
+        grid-area: horarios;
+        text-align: center;
+    }
+    /*-------------------Contactos---------------------------*/
+    .sectContactos {
+        display:grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 200px 150px 150px;
+        grid-template-areas: "horariosContacto"
+                             "telefono"
+                             "ubicacion"
+                             "map";
+        text-align: center;
+        font-size: 1.5rem;
+    }
+    
+    .horarios{
+        grid-area:horariosContacto;
+    }
+    .direccion{
+        grid-area:ubicacion;
+    }
+    .numCelular{
+        grid-area:telefono;
+    }
+    .map{
+        grid-area:map;
+        display:flex;
+        justify-content: center;
+        padding:4rem;
+    }
+    /*---------------------------PRODUCTOS-----------------------------*/
+    .sectionProductos{
+        display:grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: "titulo"
+                             "prod1"
+                             "prod2"
+                             "prod3"
+                             "prod4";
+        grid-template-rows: 65px 1fr 1fr 1fr 1fr;
+        row-gap: 2rem;
+        text-align: center;
+        padding-bottom: 2rem;
+    }
+    .tituloProteinas{
+        grid-area:titulo;
+    }
+    .menuProductos{
+       display:none;
+    }   
+    .divProductos{
+        grid-area:prod1;
+    }
+    .divProductos2{
+        grid-area:prod2;
+    }
+    .divProductos3{
+        grid-area:prod3;
+    }
+    .divProductos4{
+        grid-area:prod4;
+    }
+    /*---------------NOSOTROS-------------------*/
+    .nosotros{
+        display:grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 65px 1fr 1fr 150px;
+        grid-template-areas: "tituloN"
+                            "nosotros1"
+                            "nosotros2"
+                            "tarjetas";
+        text-align: center;
+        row-gap: 1.5rem;
+        padding: 0 1rem;
+    }
+    .tituloNosotros{
+        grid-area:tituloN;
+    }
+    .divNosotros{
+        grid-area:nosotros1;
+    }
+    .divNosotros2{
+        grid-area:nosotros2;
+    }
+    .divNosotros3{
+        grid-area:tarjetas;
+
+    }
+    /*----------------------------FAQS-------------------------*/
+    .faqsSection{
+        display:grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 65px 1fr 1fr 1fr;
+        grid-template-areas: "titulofaqs"
+                            "pregunta1"
+                            "pregunta2"
+                            "pregunta3";
+        text-align: center;
+        padding:1rem;
+    }
+}
