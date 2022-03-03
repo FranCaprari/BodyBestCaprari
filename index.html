@@ -4,79 +4,113 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;900&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <link rel="icon" href="imagenes/logo2.png" />
     <title>BodyBest</title>
 </head>
 <body>
-    <header class="header">
-        <a href="index.html">
-        <img src="imagenes/bodybestlogo2-modified.png" class="headerLogo">
-        </a>
-        <nav>
-            <div class="headerNav">
-                <input type="checkbox" id="check">
-                <label for="check" class="bar_button">
-                <i class="fa-solid fa-bars"></i>
-                </label>
-                <ul class="menu">
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="html/productos.html">Productos ⬇</a>
-                        <ul class="subMenu">
-                            <li><a href="html/productos/proteinas.html">Proteinas</a></li>
-                            <li><a href="html/productos/creatinas.html">Creatinas</a></li>
-                            <li><a href="html/productos/vitaminas.html">Vitaminas</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="html/contacto.html">Contacto</a></li>
-                    <li><a href="html/nosotros.html">Nosotros</a></li>
-                    <li><a href="html/faqs.html">FAQs</a></li>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark menu">
+            <div class="container-fluid">
+              <a href="index.html">
+                <img src="imagenes/bodybestlogo.png" class="nav-logo">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav  ms-auto">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">INICIO</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="html/productos.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      PRODUCTOS
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="html/productos.html">PROTEINAS</a></li>
+                      <li><a class="dropdown-item" href="#">CREATINAS</a></li>
+                      <li><a class="dropdown-item" href="#">VITAMINAS</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="html/nosotros.html">NOSOTROS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="html/contacto.html">CONTACTO</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="html/faqs.html">FAQs</a>
+                  </li>
                 </ul>
+              </div>
             </div>
-        </nav>
+          </nav>
     </header>
-    <h1>BODYBEST SUPLEMENTOS</h1>
-    <section class="sectionMain">
-        <div class="imgCarrousel">
-            <img src="imagenes/Banner1.jpg">  
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
-        <div class="imgDestacado">
-            <h2>Producto destacado:</h2>
-            <img src="imagenes/whey2lb.png">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="imagenes/Banner1.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="imagenes/Banner2.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="imagenes/Banner3.jpg" class="d-block w-100" alt="...">
+          </div>
         </div>
-        <div class="imgPromo">
-            <h2 class="subtitulosMain">Promocion:</h2>
-            <img src="imagenes/wheynitro.png">
-        </div>
-    </section>
-    <footer class="footerClass">
-        <div class="divFooter">
-            <p>© 2022 BodyBest. Todos los derechos reservados.</p>
-        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <section class="sectionMain">
+        <h1 class="titulo-main">BODYBEST SUPLEMENTOS</h1>
+          <div class="imgDestacado">
+              <h2>Producto destacado:</h2>
+              <img src="imagenes/wheynitro.png">
+          </div>
+          <div class="imgPromo">
+              <h2 class="subtitulosMain">Promocion:</h2>
+              <img src="imagenes/creatina500.png">
+          </div>
+      </section>
+      <footer class="footerClass">
         <div class="telefonoFooter">
             <p>Telefono: xxxxxxxx</p>
             <p>9 de Julio 258, Galería Planeta</p>
         </div>
         <div class="instagramFooter">
-            <a href="https://www.instagram.com/bodybest.ar/">
-            <i class="fa-brands fa-instagram" id="iconIg"></i>
-            <h4>Seguinos en instagram</h4> 
-            </a>
-        </div>
+          <a href="https://www.instagram.com/bodybest.ar/">
+          <i class="fa-brands fa-instagram" id="iconIg"></i>
+          <h4>Seguinos en instagram</h4> 
+          </a>
+      </div>
         <div class="horariosFooter">
             <h3>Horarios:</h3>
             <p>Lunes a viernes 10:00 a 18:00hs</p>
             <p>Sabados 10:00 a 14:00hs</p>
         </div>
+        <div class="divFooter">
+          <p>© 2022 BodyBest. Todos los derechos reservados.</p>
+       </div>
     </footer>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
-      </script>
 </body>
 </html>
