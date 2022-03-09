@@ -7,11 +7,11 @@
     width: 6rem;
 }
 a{
-    text-decoration: none;
+    text-decoration: none; 
     color: rgb(23, 23, 23);
 }
-h4{
-    text-decoration: none;
+a:hover{
+    color:red;
 }
 
 .menu{
@@ -33,11 +33,19 @@ footer {
     text-align: center;
     padding: 2rem 5rem;
 }
-#iconIg{
+.icon-footer{
     font-size: 1.5rem;
 }
 #iconIg:hover{
     color: red;
+}
+#iconGit:hover{
+    color:blue;
+}
+.divFooter{
+    border-top: solid 0.1rem;
+    grid-area:copy;
+    text-align: center;
 }
 
 
@@ -73,11 +81,6 @@ footer {
     transition: all .5s;
 }
 
-.divFooter{
-    border-top: solid 0.1rem;
-    grid-area:copy;
-    text-align: center;
-}
 
 /*-------------------------CONTACTO--------------------------------------*/
 .titulo-contacto{
@@ -190,7 +193,7 @@ form{
 /*---------------------------PRODUCTOS-----------------------------*/
 .sectionProductos{
     display:grid;
-    grid-template-columns: 15% 25% 25% 25%;
+    grid-template-columns: 20% 25% 25% 25%;
     grid-template-areas: "titulo titulo titulo titulo"
                          "barra prod1 prod2 prod3"
                          "barra prod4 prod5 prod6";
@@ -199,6 +202,7 @@ form{
     text-align: center;
     padding-bottom: 2rem;
     column-gap: 1rem;
+    justify-items:center;
 }
 .tituloProteinas{
     grid-area:titulo;
@@ -210,7 +214,7 @@ form{
     list-style-type: none;
     font-size: 1.5rem;
     text-align: start;
-    padding-left:1rem;
+    padding:0 1rem;
     border:solid rgba(0, 0, 0, 0.5);
 }
 .menuProductos li a:hover{
@@ -291,42 +295,43 @@ form{
         justify-content: center;
         padding:4rem;
     }
-            /*---------------------------PRODUCTOS-----------------------------*/
-.sectionProductos{
-    display:grid;
-    grid-template-columns: 15% 40% 40%;
-    grid-template-areas: "titulo titulo titulo"
-                         "menu prod1 prod2"
-                         "menu prod3 prod4"
-                         "menu prod5 prod6";
-    grid-template-rows: 65px 1fr 1fr 1fr;
-    row-gap: 2rem;
-    padding-bottom: 2rem;
-}
-.tituloProteinas{
-    grid-area:titulo;
-}
-.menuProductos{
-   grid-area:menu;
-}   
-.divProductos{
-    grid-area:prod1;
-}
-.divProductos2{
-    grid-area:prod2;
-}
-.divProductos3{
-    grid-area:prod3;
-}
-.divProductos4{
-    grid-area:prod4;
-}
-.divProductos5{
-    grid-area:prod5;
-}
-.divProductos6{
-    grid-area:prod6;
-}
+    /*---------------------------PRODUCTOS-----------------------------*/
+    .sectionProductos{
+        display:grid;
+        grid-template-columns: 15% 40% 40%;
+        grid-template-areas: "titulo titulo titulo"
+                            "menu prod1 prod2"
+                            "menu prod3 prod4"
+                            "menu prod5 prod6";
+        grid-template-rows: 65px 1fr 1fr 1fr;
+        row-gap: 2rem;
+        padding-bottom: 2rem;
+        justify-items:center;
+    }
+    .tituloProteinas{
+        grid-area:titulo;
+    }
+    .menuProductos{
+    grid-area:menu;
+    }   
+    .divProductos{
+        grid-area:prod1;
+    }
+    .divProductos2{
+        grid-area:prod2;
+    }
+    .divProductos3{
+        grid-area:prod3;
+    }
+    .divProductos4{
+        grid-area:prod4;
+    }
+    .divProductos5{
+        grid-area:prod5;
+    }
+    .divProductos6{
+        grid-area:prod6;
+    }
 
 
 }
@@ -400,74 +405,75 @@ form{
         grid-area: horarios;
         text-align: center;
     }
-        /*---------------------------PRODUCTOS-----------------------------*/
-        .sectionProductos{
-            display:grid;
-            grid-template-columns: 1fr;
-            grid-template-areas: "titulo"
+    /*---------------------------PRODUCTOS-----------------------------*/
+    .sectionProductos{
+        display:grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: "titulo"
                                  "prod1"
                                  "prod2"
                                  "prod3"
                                  "prod4"
                                  "prod5"
                                  "prod6";
-            grid-template-rows: 65px 1fr 1fr 1fr 1fr 1fr 1fr;
-            row-gap: 2rem;
-            padding-bottom: 2rem;
-        }
-        .tituloProteinas{
+        grid-template-rows: 65px 1fr 1fr 1fr 1fr 1fr 1fr;
+        row-gap: 2rem;
+        padding-bottom: 2rem;
+        justify-items: center;
+    }
+    .tituloProteinas{
             grid-area:titulo;
-        }
-        .menuProductos{
-           display:none;
-        }   
-        .divProductos{
-            grid-area:prod1;
-        }
-        .divProductos2{
-            grid-area:prod2;
-        }
-        .divProductos3{
-            grid-area:prod3;
-        }
-        .divProductos4{
-            grid-area:prod4;
-        }
-        .divProductos5{
-            grid-area:prod5;
-        }
-        .divProductos6{
-            grid-area:prod6;
-        }
-        /*-------------------Contactos---------------------------*/
-        .sectContactos {
-            display:grid;
-            grid-template-columns: 100%;
-            grid-template-rows: 200px 150px 150px;
-            grid-template-areas: "horariosContacto"
-                                 "telefono"
-                                 "ubicacion"
-                                 "map";
-            text-align: center;
-            font-size: 1.5rem;
-        }
+    }
+    .menuProductos{
+       display:none;
+    }   
+    .divProductos{
+       grid-area:prod1;
+    }
+    .divProductos2{
+        grid-area:prod2;
+    }
+    .divProductos3{
+        grid-area:prod3;
+    }
+    .divProductos4{
+        grid-area:prod4;
+    }
+    .divProductos5{
+        grid-area:prod5;
+    }
+    .divProductos6{
+        grid-area:prod6;
+    }
+    /*-------------------Contactos---------------------------*/
+    .sectContactos {
+        display:grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 200px 150px 150px;
+        grid-template-areas: "horariosContacto"
+                             "telefono"
+                             "ubicacion"
+                             "map";
+        text-align: center;
+        font-size: 1.5rem;
+    }
         
-        .horarios{
-            grid-area:horariosContacto;
-        }
-        .direccion{
-            grid-area:ubicacion;
-        }
-        .numCelular{
-            grid-area:telefono;
-        }
-        .map{
-            grid-area:map;
-            display:flex;
-            justify-content: center;
-            padding:4rem;
-        }
-            /*---------------NOSOTROS-------------------*/
+    .horarios{
+        grid-area:horariosContacto;
+    }
+    .direccion{
+        grid-area:ubicacion;
+    }
+    .numCelular{
+        grid-area:telefono;
+    }
+    .map{
+        grid-area:map;
+        display:flex;
+        justify-content: center;
+        padding:4rem;
+    }
+    /*---------------NOSOTROS-------------------*/
     .nosotros{
         display:grid;
         grid-template-columns: 1fr;
