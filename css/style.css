@@ -1,502 +1,351 @@
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-}
-.nav-logo{
-    width: 6rem;
-}
-a{
-    text-decoration: none; 
-    color: rgb(23, 23, 23);
-}
-a:hover{
-    color:red;
-}
-
-.menu{
-    font-size: 1.5rem;
-}
-
-footer {
-    border-top: solid 2px;
-}
-
-.footerClass{
-    display:grid;
-    width: 100%;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas: "telefono ig horarios"
-                         "copy copy copy";
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 2rem 5rem;
-}
-.icon-footer{
-    font-size: 1.5rem;
-}
-#iconIg:hover{
-    color: red;
-}
-#iconGit:hover{
-    color:blue;
-}
-.divFooter{
-    border-top: solid 0.1rem;
-    grid-area:copy;
-    text-align: center;
-}
-
-
-.sectionMain{
-    display:grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 100px 1fr;
-    grid-template-areas: "titulo titulo"
-                         "promo  destacado";
-    text-align: center;
-    padding: 1rem;
-}
-
-.titulo-main{
+/*COLORES*/
+.main {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 100px 1fr;
+  grid-template-areas: "titulo titulo" "promo  destacado";
+  text-align: center;
+  padding: 1rem; }
+  .main__titulo {
     grid-area: titulo;
     font-style: oblique;
-    color: red;
-}
-.imgDestacado{
-    grid-area:destacado;
-    width: 100%;
-}
-.imgDestacado img:hover{
-    transform: scale(1.2, 1.2);
-    transition: all .5s;
-}
-.imgPromo{
-    grid-area:promo;
-    width: 100%;
-}
-.imgPromo img:hover{
-    transform: scale(1.2, 1.2);
-    transition: all .5s;
-}
+    color: red; }
+  .main__destacado {
+    grid-area: destacado;
+    width: 100%; }
+    .main__destacado__img:hover {
+      transform: scale(1.2, 1.2);
+      transition: all .5s; }
+  .main__promo {
+    grid-area: promo;
+    width: 100%; }
+    .main__promo__img:hover {
+      transform: scale(1.2, 1.2);
+      transition: all .5s; }
 
+.titulo-contacto {
+  color: red;
+  text-align: center;
+  font-style: oblique; }
 
-/*-------------------------CONTACTO--------------------------------------*/
-.titulo-contacto{
-    color:red;
-    text-align: center;
-    font-style: oblique;
-}
-h2{
-    text-align: center;
-    padding: 2rem;
-}
+h2 {
+  text-align: center;
+  padding: 2rem; }
 
+.textConsulta {
+  margin-bottom: 0;
+  font-size: 2rem; }
 
-.textConsulta{
-    margin-bottom: 0;
-    font-size: 2rem;
-}
-label{
-    font-size: 1.2rem;
-}
+label {
+  font-size: 1.2rem; }
 
-.formSection{
-    max-width: 114rem;
-    margin: auto;
-}
+.formSection {
+  max-width: 114rem;
+  margin: auto; }
 
-form{
-    max-width: 80rem;
-    margin: auto;
-    padding: 1rem;
-}
+form {
+  max-width: 80rem;
+  margin: auto;
+  padding: 1rem; }
 
-.text{
-    width: 100%;
-    text-align: left;
-    font-size: 1rem;
-    font-weight: 200;
-    text-decoration: none;
-    text-transform: none;
-    line-height: 1.5;
-    margin: 1rem 0;
-    padding: 1rem;
-    border: 0.1rem solid;
-    border-radius: 1rem;
-}
+.text {
+  width: 100%;
+  text-align: left;
+  font-size: 1rem;
+  font-weight: 200;
+  text-decoration: none;
+  text-transform: none;
+  line-height: 1.5;
+  margin: 1rem 0;
+  padding: 1rem;
+  border: 0.1rem solid;
+  border-radius: 1rem; }
 
-.textArea{
-    display:flex;
-    width: 100%;
-    min-width: 100%;
-    max-width: 100%;
-    text-align: left;
-    font-size: 1rem;
-    font-weight: 200;
-    text-decoration: none;
-    text-transform: none;
-    line-height: 1.5;
-    margin: 1rem 0;
-    padding: 1rem;
-    border: 0.1rem solid;
-    border-radius: 1rem;
-    font-family: 'Roboto', sans-serif;
-}
+.textArea {
+  display: flex;
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  text-align: left;
+  font-size: 1rem;
+  font-weight: 200;
+  text-decoration: none;
+  text-transform: none;
+  line-height: 1.5;
+  margin: 1rem 0;
+  padding: 1rem;
+  border: 0.1rem solid;
+  border-radius: 1rem;
+  font-family: 'Roboto', sans-serif; }
 
 .botonEnviar {
-    width: 100%;
-    height: 10%;
-    background-color: #31384A;
-    color: #fff;
-    font-size: 1.6rem;
-    font-weight: 200;
-    text-decoration: none;
-    text-transform: none;
-    line-height: 1.5;
-    margin: 1.5rem 0 3rem 0;
-    padding: 1rem;
-    border: 0.1rem solid;
-    border-radius: 1rem;
-}
+  width: 100%;
+  height: 10%;
+  background-color: #31384A;
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 200;
+  text-decoration: none;
+  text-transform: none;
+  line-height: 1.5;
+  margin: 1.5rem 0 3rem 0;
+  padding: 1rem;
+  border: 0.1rem solid;
+  border-radius: 1rem; }
+  .botonEnviar:hover {
+    cursor: pointer; }
 
-.botonEnviar:hover{
-    cursor: pointer;
-}
-
-.sectContactos {
-    display:grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 150px;
-    grid-template-areas: "ubicacion telefono horariosContacto"
-                         "map map map";
-    text-align: center;
-    font-size: 1.5rem;
-}
-
-.horarios{
-    grid-area:horariosContacto;
-}
-.direccion{
-    grid-area:ubicacion;
-}
-.numCelular{
-    grid-area:telefono;
-}
-.map{
-    grid-area:map;
-    display:flex;
+.contactos {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 150px;
+  grid-template-areas: "ubicacion telefono horariosContacto" "map map map";
+  text-align: center;
+  font-size: 1.5rem; }
+  .contactos__horarios {
+    grid-area: horariosContacto; }
+  .contactos__direccion {
+    grid-area: ubicacion; }
+  .contactos__numero {
+    grid-area: telefono; }
+  .contactos__map {
+    grid-area: map;
+    display: flex;
     justify-content: center;
-    padding:4rem;
-}
-/*---------------------------PRODUCTOS-----------------------------*/
-.sectionProductos{
-    display:grid;
-    grid-template-columns: 20% 25% 25% 25%;
-    grid-template-areas: "titulo titulo titulo titulo"
-                         "barra prod1 prod2 prod3"
-                         "barra prod4 prod5 prod6";
-    grid-template-rows: 65px 1fr 1fr;
-    row-gap: 2rem;
-    text-align: center;
-    padding-bottom: 2rem;
-    column-gap: 1rem;
-    justify-items:center;
-}
-.tituloProteinas{
-    grid-area:titulo;
-    color:red;
-    font-style: oblique;
-}
-.menuProductos{
-    grid-area:barra;
+    padding: 4rem; }
+
+.productos {
+  display: grid;
+  grid-template-columns: 20% 25% 25% 25%;
+  grid-template-areas: "titulo titulo titulo titulo" "barra prod1 prod2 prod3" "barra prod4 prod5 prod6";
+  grid-template-rows: 65px 1fr 1fr;
+  row-gap: 2rem;
+  text-align: center;
+  padding-bottom: 2rem;
+  column-gap: 1rem;
+  justify-items: center; }
+  .productos__titulo {
+    grid-area: titulo;
+    color: red;
+    font-style: oblique; }
+  .productos__menu {
+    grid-area: barra;
     list-style-type: none;
     font-size: 1.5rem;
     text-align: start;
-    padding:0 1rem;
-    border:solid rgba(0, 0, 0, 0.5);
-}
-.menuProductos li a:hover{
-    color:rgb(202, 29, 81);
-}
+    padding: 0 1rem;
+    border: solid rgba(0, 0, 0, 0.5); }
+    .productos__menuli a:hover {
+      color: #ca1d51; }
+  .productos__producto1 {
+    grid-area: prod1; }
+  .productos__producto2 {
+    grid-area: prod2; }
+  .productos__producto3 {
+    grid-area: prod3; }
+  .productos__producto4 {
+    grid-area: prod4; }
+  .productos__producto5 {
+    grid-area: prod5; }
+  .productos__producto6 {
+    grid-area: prod6; }
 
-.divProductos{
-    grid-area:prod1;
-}
-.divProductos2{
-    grid-area:prod2;
-}
-.divProductos3{
-    grid-area:prod3;
-}
-.divProductos4{
-    grid-area:prod4;
-}
-.divProductos5{
-    grid-area:prod5;
-}
-.divProductos6{
-    grid-area:prod6;
-}
-/*----------------------------FAQS-------------------------*/
-.faqsTitulo{
-    color:red;
-    font-style: oblique;
+.titulo__faqs {
+  color: red;
+  font-style: oblique;
+  text-align: center; }
+
+.faqsSection {
+  padding: 5rem; }
+
+.tituloNosotros {
+  color: red;
+  font-style: oblique;
+  text-align: center; }
+
+.nosotros {
+  display: flex;
+  justify-content: center; }
+  .nosotros__tarjetas {
+    display: block;
+    text-align: center; }
+  .nosotros__tarjetas i {
+    display: inline-block;
+    font-size: 3rem; }
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box; }
+
+.nav-logo {
+  width: 6rem; }
+
+a {
+  text-decoration: none;
+  color: #171717; }
+
+a:hover {
+  color: red; }
+
+.menu {
+  font-size: 1.5rem; }
+
+footer {
+  border-top: solid 2px; }
+
+.footerClass {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "telefono ig horarios" "copy copy copy";
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem 5rem; }
+
+.icon-footer {
+  font-size: 1.5rem; }
+
+#iconIg:hover {
+  color: red; }
+
+#iconGit:hover {
+  color: blue; }
+
+.divFooter {
+  border-top: solid 0.1rem;
+  grid-area: copy;
+  text-align: center; }
+
+@media only screen and (max-width: 980px) {
+  /*-------------------Contactos---------------------------*/
+  .contactos {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 200px 150px 150px;
+    grid-template-areas: "horariosContacto" "telefono" "ubicacion" "map";
     text-align: center;
-}
-.faqsSection{
-    padding:5rem;
-}
-/*---------------NOSOTROS-------------------*/
-.tituloNosotros{
-    color:red;
-    font-style: oblique;
+    font-size: 1.5rem; }
+    .contactos__horarios {
+      grid-area: horariosContacto; }
+    .contactos__direccion {
+      grid-area: ubicacion; }
+    .contactos__numero {
+      grid-area: telefono; }
+    .contactos__map {
+      grid-area: map;
+      display: flex;
+      justify-content: center;
+      padding: 4rem; }
+  /*---------------------------PRODUCTOS-----------------------------*/
+  .productos {
+    display: grid;
+    grid-template-columns: 15% 40% 40%;
+    grid-template-areas: "titulo titulo titulo" "menu prod1 prod2" "menu prod3 prod4" "menu prod5 prod6";
+    grid-template-rows: 65px 1fr 1fr 1fr;
+    row-gap: 2rem;
+    padding-bottom: 2rem;
+    justify-items: center; }
+    .productos__titulo {
+      grid-area: titulo; }
+    .productos__menu {
+      grid-area: menu; }
+    .productos__producto1 {
+      grid-area: prod1; }
+    .productos__producto2 {
+      grid-area: prod2; }
+    .productos__producto3 {
+      grid-area: prod3; }
+    .productos__producto4 {
+      grid-area: prod4; }
+    .productos__producto5 {
+      grid-area: prod5; }
+    .productos__producto6 {
+      grid-area: prod6; } }
+
+@media only screen and (max-width: 600px) {
+  body {
+    padding-left: 0;
+    padding-right: 0; }
+  .main {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100px 1fr 1fr;
+    grid-template-areas: "titulo" "promo"  "destacado";
+    align-items: center;
+    text-align: center; }
+    .main__titulo {
+      grid-area: titulo;
+      width: 100%; }
+    .main__destacado {
+      grid-area: destacado; }
+      .main__destacado__img {
+        width: 100%; }
+    .main__promo {
+      grid-area: promo; }
+      .main__promo__img {
+        width: 100%; }
+  .footerClass {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "telefono" "ig" "horarios"  "copy";
+    align-items: center;
+    justify-content: center; }
+  .divFooter {
+    grid-area: copy;
+    text-align: center; }
+  .telefonoFooter {
+    grid-area: telefono;
+    text-align: center; }
+  .instagramFooter {
+    grid-area: ig;
+    text-align: center; }
+  .imgInstagram {
+    width: 20%; }
+  .horariosFooter {
+    grid-area: horarios;
+    text-align: center; }
+  /*---------------------------PRODUCTOS-----------------------------*/
+  .productos {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "titulo" "prod1" "prod2" "prod3" "prod4" "prod5" "prod6";
+    grid-template-rows: 65px 1fr 1fr 1fr 1fr 1fr 1fr;
+    row-gap: 2rem;
+    padding-bottom: 2rem;
+    justify-items: center; }
+    .productos__titulo {
+      grid-area: titulo; }
+    .productos__menu {
+      display: none; }
+    .productos__producto1 {
+      grid-area: prod1; }
+    .productos__producto2 {
+      grid-area: prod2; }
+    .productos__producto3 {
+      grid-area: prod3; }
+    .productos__producto4 {
+      grid-area: prod4; }
+    .productos__producto5 {
+      grid-area: prod5; }
+    .productos__producto6 {
+      grid-area: prod6; }
+  /*-------------------Contactos---------------------------*/
+  .contactos {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 200px 150px 150px;
+    grid-template-areas: "horariosContacto" "telefono" "ubicacion" "map";
     text-align: center;
-}
-.div-nosotros{
-    display:flex;
-    justify-content: center;
-}
-.tarjetas-nosotros{
-    display:block;
-    text-align: center;
-}
-.tarjetas-nosotros i{
-    display:inline-block;
-    font-size: 3rem;
-}
-@media only screen and (max-width: 980px){
-    /*-------------------Contactos---------------------------*/
-    .sectContactos {
-        display:grid;
-        grid-template-columns: 100%;
-        grid-template-rows: 200px 150px 150px;
-        grid-template-areas: "horariosContacto"
-                             "telefono"
-                             "ubicacion"
-                             "map";
-        text-align: center;
-        font-size: 1.5rem;
-    }
-    
-    .horarios{
-        grid-area:horariosContacto;
-    }
-    .direccion{
-        grid-area:ubicacion;
-    }
-    .numCelular{
-        grid-area:telefono;
-    }
-    .map{
-        grid-area:map;
-        display:flex;
-        justify-content: center;
-        padding:4rem;
-    }
-    /*---------------------------PRODUCTOS-----------------------------*/
-    .sectionProductos{
-        display:grid;
-        grid-template-columns: 15% 40% 40%;
-        grid-template-areas: "titulo titulo titulo"
-                            "menu prod1 prod2"
-                            "menu prod3 prod4"
-                            "menu prod5 prod6";
-        grid-template-rows: 65px 1fr 1fr 1fr;
-        row-gap: 2rem;
-        padding-bottom: 2rem;
-        justify-items:center;
-    }
-    .tituloProteinas{
-        grid-area:titulo;
-    }
-    .menuProductos{
-    grid-area:menu;
-    }   
-    .divProductos{
-        grid-area:prod1;
-    }
-    .divProductos2{
-        grid-area:prod2;
-    }
-    .divProductos3{
-        grid-area:prod3;
-    }
-    .divProductos4{
-        grid-area:prod4;
-    }
-    .divProductos5{
-        grid-area:prod5;
-    }
-    .divProductos6{
-        grid-area:prod6;
-    }
-
-
-}
-@media only screen and (max-width: 600px){
-    body{
-        padding-left: 0;
-        padding-right: 0;
-    }
-
-    .sectionMain{
-        display:grid;
-        grid-template-columns: 100%;
-        grid-template-rows: 100px 1fr 1fr;
-        grid-template-areas: "titulo"
-                             "promo" 
-                             "destacado";
-        align-items: center;
-        text-align: center;
-    }
-    
-    .titulo-main{
-        grid-area: titulo;
-        width: 100%;
-    }
-    
-    .imgDestacado{
-        grid-area:destacado;
-    }
-    .imgDestacado img{
-        width: 100%;
-    }
-
-    .imgPromo{
-        grid-area:promo;
-    }
-
-    .imgPromo img{
-        width: 100%;
-    }
-
-    .footerClass{
-        display:grid;
-        width: 100%;
-        grid-template-columns: 100%;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
-        grid-template-areas: "telefono"
-                             "ig"
-                             "horarios" 
-                             "copy";
-        align-items: center;
-        justify-content: center;
-    }
-    
-    .divFooter{
-        grid-area:copy;
-        text-align: center;
-    }
-    .telefonoFooter{
-        grid-area:telefono;
-        text-align: center;
-    }
-    .instagramFooter{
-        grid-area: ig;
-        text-align: center;
-    }
-    .imgInstagram{
-        width: 20%;
-    }
-    
-    .horariosFooter{
-        grid-area: horarios;
-        text-align: center;
-    }
-    /*---------------------------PRODUCTOS-----------------------------*/
-    .sectionProductos{
-        display:grid;
-        grid-template-columns: 1fr;
-        grid-template-areas: "titulo"
-                                 "prod1"
-                                 "prod2"
-                                 "prod3"
-                                 "prod4"
-                                 "prod5"
-                                 "prod6";
-        grid-template-rows: 65px 1fr 1fr 1fr 1fr 1fr 1fr;
-        row-gap: 2rem;
-        padding-bottom: 2rem;
-        justify-items: center;
-    }
-    .tituloProteinas{
-            grid-area:titulo;
-    }
-    .menuProductos{
-       display:none;
-    }   
-    .divProductos{
-       grid-area:prod1;
-    }
-    .divProductos2{
-        grid-area:prod2;
-    }
-    .divProductos3{
-        grid-area:prod3;
-    }
-    .divProductos4{
-        grid-area:prod4;
-    }
-    .divProductos5{
-        grid-area:prod5;
-    }
-    .divProductos6{
-        grid-area:prod6;
-    }
-    /*-------------------Contactos---------------------------*/
-    .sectContactos {
-        display:grid;
-        grid-template-columns: 100%;
-        grid-template-rows: 200px 150px 150px;
-        grid-template-areas: "horariosContacto"
-                             "telefono"
-                             "ubicacion"
-                             "map";
-        text-align: center;
-        font-size: 1.5rem;
-    }
-        
-    .horarios{
-        grid-area:horariosContacto;
-    }
-    .direccion{
-        grid-area:ubicacion;
-    }
-    .numCelular{
-        grid-area:telefono;
-    }
-    .map{
-        grid-area:map;
-        display:flex;
-        justify-content: center;
-        padding:4rem;
-    }
-    /*---------------NOSOTROS-------------------*/
-    .nosotros{
-        display:grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 10px 1fr 1fr 150px;
-        grid-template-areas: "tituloN"
-                            "nosotros1"
-                            "nosotros2"
-                            "tarjetas";
-        text-align: center;
-        row-gap: 1.5rem;
-        padding: 0 1rem;
-    }
-    .tituloNosotros{
-        grid-area:tituloN;
-    }
-    .divNosotros{
-        grid-area:nosotros1;
-    }
-    .divNosotros2{
-        grid-area:nosotros2;
-    }
-    .divNosotros3{
-        grid-area:tarjetas;
-
-    }
-}
+    font-size: 1.5rem; }
+    .contactos__horarios {
+      grid-area: horariosContacto; }
+    .contactos__direccion {
+      grid-area: ubicacion; }
+    .contactos__numero {
+      grid-area: telefono; }
+    .contactos__map {
+      grid-area: map; } }

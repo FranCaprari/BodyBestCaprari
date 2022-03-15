@@ -1,0 +1,18 @@
+
+.tituloNosotros{
+    color:$colorTitulos;
+    font-style: oblique;
+    text-align: center;
+}
+.nosotros{
+    display:flex;
+    justify-content: center;
+    &__tarjetas{
+        display:block;
+        text-align: center;
+    }
+    &__tarjetas i{
+        display:inline-block;
+        font-size: 3rem;
+    }
+}
