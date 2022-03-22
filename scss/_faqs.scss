@@ -1,10 +1,15 @@
 
 
 .titulo__faqs{
-    color:$colorTitulos;
-    font-style: oblique;
-    text-align: center;
+    @extend .estiloTitulos;
 }
 .faqsSection{
     padding:5rem;
+}
+
+
+
+.acor_button{
+    font-size: 1.5rem;
+    color:red;
 }

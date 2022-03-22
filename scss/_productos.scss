@@ -14,8 +14,7 @@
     
     &__titulo{
         grid-area:titulo;
-        color:$colorTitulos;
-        font-style: oblique;
+        @extend .estiloTitulos;
     }
 
     &__menu{
@@ -48,6 +47,14 @@
     &__producto6{
         grid-area:prod6;
     }
+    .card{
+        border: none;
+    }
+    &__precio{
+        background-color:red;
+        color:black;
+        &:hover{
+            background-color:red;
+    }
 }
-
-
+}

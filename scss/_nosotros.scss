@@ -1,8 +1,6 @@
 
 .tituloNosotros{
-    color:$colorTitulos;
-    font-style: oblique;
-    text-align: center;
+    @extend .estiloTitulos;
 }
 .nosotros{
     display:flex;

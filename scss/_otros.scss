@@ -1,0 +1,28 @@
+.nav-logo{
+    width: 6rem;
+}
+a{
+    text-decoration: none; 
+    color: rgb(23, 23, 23);
+}
+a:hover{
+    color:red;
+}
+
+.menu{
+    font-size: 1.5rem;
+}
+
+.estiloTitulos{
+    color:$colorTitulos;
+    font-style: oblique;
+    text-align: center;
+}
+
+@mixin estiloIconos($tamanioIcono, $colorIcono, $hoverIcono){
+    font-size:$tamanioIcono;
+    color:$colorIcono;
+    &:hover{
+        color:$hoverIcono;
+    }
+}

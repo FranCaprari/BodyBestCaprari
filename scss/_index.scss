@@ -1,31 +1,36 @@
 
 .main{
     display:grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 45% 50%;
     grid-template-rows: 100px 1fr;
     grid-template-areas: "titulo titulo"
                          "promo  destacado";
     text-align: center;
     padding: 1rem;
+    column-gap: 2rem;
 
     &__titulo{
         grid-area: titulo;
-        font-style: oblique;
-        color:$colorTitulos;
+        @extend .estiloTitulos;
     }
 
     &__destacado{
-        grid-area:destacado;
         width: 100%;
+        grid-area:destacado;
         &__img:hover{
             transform: scale(1.2, 1.2);
             transition: all .5s;
         }
     }
 
+
     &__promo{
-        grid-area:promo;
         width: 100%;
+        grid-area:promo;
+        &__img{
+            width: 60%;
+            height: 500px;
+        }
         &__img:hover{
             transform: scale(1.2, 1.2);
             transition: all .5s;
