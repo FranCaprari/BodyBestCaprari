@@ -26,3 +26,12 @@ a:hover{
         color:$hoverIcono;
     }
 }
+@mixin estiloBotones($colorLetra, $colorBoton, $hoverBoton, $letraHover){
+    color:$colorLetra;
+    background-color: $colorBoton;
+    &:hover{
+        background-color: $hoverBoton;
+        color:$letraHover;
+    }
+}
+

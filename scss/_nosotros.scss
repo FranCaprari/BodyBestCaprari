@@ -13,4 +13,19 @@
         display:inline-block;
         font-size: 3rem;
     }
+    &__foto__instagram{
+        display:flex;
+        justify-content: center;
+    }
+    &__mensaje{
+        display:flex;
+        justify-content: center
+    }
+    &__boton__instagram{
+        @include estiloBotones(white, red, white, red);
+        border:red;
+    }    
+    &__boton__contacto{
+        @include estiloBotones(white, blue, white, blue);
+    }
 }
