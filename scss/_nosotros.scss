@@ -22,7 +22,7 @@
         justify-content: center
     }
     &__boton__instagram{
-        @include estiloBotones(white, red, white, red);
+        @include estiloBotones(white, red, red, black);
         border:red;
     }    
     &__boton__contacto{

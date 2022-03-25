@@ -31,7 +31,7 @@ a:hover {
     width: 100%;
     grid-area: destacado; }
     .main__destacado__img:hover {
-      transform: scale(1.2, 1.2);
+      transform: scale(1.1, 1.1);
       transition: all .5s; }
   .main__promo {
     width: 100%;
@@ -40,7 +40,7 @@ a:hover {
       width: 60%;
       height: 500px; }
     .main__promo__img:hover {
-      transform: scale(1.2, 1.2);
+      transform: scale(1.1, 1.1);
       transition: all .5s; }
 
 h2 {
@@ -132,7 +132,7 @@ form {
 .productos {
   display: grid;
   grid-template-columns: 20% 25% 25% 25%;
-  grid-template-areas: "titulo titulo titulo titulo" "barra prod1 prod2 prod3" "barra prod4 prod5 prod6";
+  grid-template-areas: "titulo titulo titulo titulo" "prod1 prod2 prod3 prod4" "prod5 prod6 prod7 prod8";
   grid-template-rows: 65px 1fr 1fr;
   row-gap: 2rem;
   text-align: center;
@@ -162,13 +162,22 @@ form {
     grid-area: prod5; }
   .productos__producto6 {
     grid-area: prod6; }
+  .productos__producto7 {
+    grid-area: prod7; }
+  .productos__producto8 {
+    grid-area: prod8; }
   .productos .card {
     border: none; }
   .productos__precio {
+    color: white;
     background-color: red;
-    color: black; }
+    border: red; }
     .productos__precio:hover {
-      background-color: red; }
+      background-color: red;
+      color: black; }
+
+.imgProductos {
+  height: 100%; }
 
 .faqsSection {
   padding: 5rem; }
@@ -207,8 +216,8 @@ form {
     background-color: red;
     border: red; }
     .nosotros__boton__instagram:hover {
-      background-color: white;
-      color: red; }
+      background-color: red;
+      color: black; }
   .nosotros__boton__contacto {
     color: white;
     background-color: blue; }
@@ -337,7 +346,7 @@ footer {
   .productos {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-areas: "titulo" "prod1" "prod2" "prod3" "prod4" "prod5" "prod6";
+    grid-template-areas: "titulo" "prod1" "prod2" "prod3" "prod4" "prod5" "prod6" "prod7" "prod8";
     grid-template-rows: 65px 1fr 1fr 1fr 1fr 1fr 1fr;
     row-gap: 2rem;
     padding-bottom: 2rem;
@@ -358,6 +367,10 @@ footer {
       grid-area: prod5; }
     .productos__producto6 {
       grid-area: prod6; }
+    .productos__producto7 {
+      grid-area: prod7; }
+    .productos__producto8 {
+      grid-area: prod8; }
   /*-------------------Contactos---------------------------*/
   .contactos {
     display: grid;

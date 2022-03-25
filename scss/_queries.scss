@@ -139,7 +139,9 @@
                                  "prod3"
                                  "prod4"
                                  "prod5"
-                                 "prod6";
+                                 "prod6"
+                                 "prod7"
+                                 "prod8";
         grid-template-rows: 65px 1fr 1fr 1fr 1fr 1fr 1fr;
         row-gap: 2rem;
         padding-bottom: 2rem;
@@ -167,6 +169,12 @@
         }
         &__producto6{
             grid-area:prod6;
+        }
+        &__producto7{
+            grid-area:prod7;
+        }
+        &__producto8{
+            grid-area:prod8;
         }
     } 
     /*-------------------Contactos---------------------------*/

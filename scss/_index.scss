@@ -18,7 +18,7 @@
         width: 100%;
         grid-area:destacado;
         &__img:hover{
-            transform: scale(1.2, 1.2);
+            transform: scale(1.1, 1.1);
             transition: all .5s;
         }
     }
@@ -32,7 +32,7 @@
             height: 500px;
         }
         &__img:hover{
-            transform: scale(1.2, 1.2);
+            transform: scale(1.1, 1.1);
             transition: all .5s;
         }
     }
