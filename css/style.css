@@ -304,6 +304,8 @@ footer {
   body {
     padding-left: 0;
     padding-right: 0; }
+  .estiloTitulos, .main__titulo, .titulo-contacto, .productos__titulo, .titulo__faqs, .tituloNosotros {
+    padding-top: 2rem; }
   .main {
     display: grid;
     grid-template-columns: 100%;
